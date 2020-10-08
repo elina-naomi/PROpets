@@ -1,0 +1,381 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #393939;
+}
+
+/*Navigation bar on start page*/
+
+@media (max-width: 575px) {
+    .navbar {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.nav-wrapper {
+    background-color: #669885;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+/*Navigation icon - burger*/
+
+.start-burger {
+    border-color: transparent !important;
+    outline: transparent !important;
+}
+
+.start-burger .navbar-toggler-icon {
+    background-image: url(../images/001-menu.svg);
+}
+
+/*Sign in button*/
+
+.sign-in-button {
+    /*outline: 1px solid white;*/
+    background-color: transparent;
+    padding: 0.25em 1.7em;
+    color: white;
+    border: 1px solid #FFFFFF;
+    border-radius: 17px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.sign-in-button:hover {
+    background-color: #ffe18b;
+    color: #393939;
+    border-color: #FFE18B;
+}
+
+.sign-in-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 225, 139, .5);
+}
+
+
+/*Main slider wrapper on start page*/
+
+.main-wrapper  h1 {
+    font-size: 3.5em;
+}
+
+/*for medium screens*/
+@media (max-width: 991px) {
+    .main-wrapper  h1 {
+        font-size: 2.3em;
+        line-height: 1.5em;
+    }
+}
+
+/*for small and xs screens*/
+
+@media (max-width: 767px) {
+    .main-wrapper  h1 {
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
+}
+
+.main-wrapper  h1 > span {
+    color: #669885;
+}
+
+/*Buttons*/
+
+.lost-button-wrapper {
+    background: linear-gradient(to right, #ffe18b 50%, white 50%);
+    position: relative;
+    z-index: 100;
+}
+
+.lost-button:hover {
+    background-color: #ffd96a;
+}
+
+.lost-button-wrapper .container-xl {
+    background-color: white;
+}
+
+.lost-button {
+    background-color: #FFE18B;
+    border-radius: 0 50px 50px 0;
+}
+
+.lost-button h2 {
+    margin: 0 5em 0 0;
+    color: #393939;
+}
+
+.lost-button-wrapper a {
+    color: #393939;
+    text-decoration: none;
+}
+
+.found-button-wrapper {
+    background: linear-gradient(to right, #84B6A3 50%, white 50%);
+    bottom: 0.5em;
+    position: relative;
+}
+
+.found-button-wrapper .container-xl {
+    background-color: white;
+}
+
+.found-button {
+    background-color: #84B6A3;
+    border-radius: 0 50px 50px 0;
+}
+
+.found-button:hover {
+    background-color: #669885;
+}
+
+.button-col-outer {
+    padding: 0;
+}
+.found-button-wrapper a {
+    color: white;
+    text-decoration: none;
+}
+.found-button h2 {
+    color: white;
+    margin: 0 2.5em 0 0;
+    padding-top: 0.2em;
+}
+
+.lost-button .icon-search {
+    position: absolute;
+    bottom: -0.2em;
+    right: 0;
+}
+
+.text-button:before {
+    content: "I lost my pet!";
+}
+
+/*.text-button:hover:before {*/
+/*    content: "Click to find!";*/
+/*}*/
+
+.lost-button > div:hover .text-button:before {
+    content: "Click to find!";
+}
+
+/*Green block after main slider on start page*/
+
+.green-wrapper {
+    background-color: #669885;
+}
+
+.green-wrapper h2 {
+    color: white;
+    line-height: 1.5;
+}
+
+/*for medium screens*/
+@media (max-width: 991px) {
+    .green-wrapper h2 {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+}
+
+/*for small and xs screens*/
+
+@media (max-width: 767px) {
+    .green-wrapper h2 {
+        font-size: 1.1em;
+        line-height: 1.7em;
+    }
+}
+
+/*Block after green block with pet need items on start page*/
+
+.list-pet-needs-wrapper h3 {
+    font-weight: 600;
+    color: #669885;
+    font-size: 1.5em;
+    line-height: 1.9em;
+}
+
+
+
+/*List items*/
+
+.list-pet-needs-wrapper ul,li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list-pet-needs-wrapper ul {
+    line-height: 2.3em;
+    margin: 1.2em 0;
+}
+
+.list-pet-needs-wrapper ul > li {
+    font-size: 1.125em;
+    margin-left: 1.8em;
+}
+
+.list-pet-needs-wrapper ul li::before {
+    content: '\2022';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -0.6em;
+    color: #669885;
+    font-size: 3em;
+
+}
+
+@media (max-width: 767px) {
+
+    .list-pet-needs-wrapper h3 {
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+
+    .list-pet-needs-wrapper ul {
+        line-height: 1.5em;
+    }
+
+    .list-pet-needs-wrapper ul > li {
+        font-size: 1em;
+        margin-left: 1.6em;
+    }
+
+    .list-pet-needs-wrapper ul li::before {
+        margin-left: -0.7em;
+        font-size: 2.5em;
+    }
+}
+
+/*Orange block*/
+.orange-wrapper {
+    background-color: #FF6F61;
+}
+
+.orange-wrapper h2 {
+    color: white;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.orange-wrapper p {
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+/*Icon visibility only on xl-screens*/
+@media (max-width: 1199px) {
+    .heart-icon-wrapper {
+        display: none;
+    }
+}
+
+/*for medium screens*/
+@media (max-width: 991px) {
+    .orange-wrapper h2 {
+        font-size: 2em;
+    }
+}
+
+/*for small and xs screens*/
+@media (max-width: 767px) {
+    .orange-wrapper .divider {
+        display: none;
+    }
+}
+
+
+/*Footer*/
+
+.footer-wrapper {
+    background-color: #669885;
+}
+
+.footer-wrapper .logo {
+    height: 47px;
+}
+
+/*for medium screens*/
+@media (max-width: 991px) {
+    .footer-wrapper .logo {
+        height: 30px;
+    }
+}
+
+.footer-wrapper .fab {
+    color: white;
+    font-size: 1.8em;
+    margin-right: 0.5em;
+}
+
+.footer-wrapper .address {
+    font-size: 0.75em;
+    color: white;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    margin-top: 1.2em;
+}
+
+.footer-wrapper ul {
+    list-style-type: none;
+    color: white;
+    line-height: 1.8;
+}
+
+.footer-wrapper li {
+    text-indent: -2em;
+}
+
+.footer-wrapper li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-wrapper ul li:before {
+    font-family: 'FontAwesome';
+    float: left;
+    width: 2em;
+}
+
+.footer-wrapper ul li.lost:before {
+    content: "\f002";
+}
+
+.footer-wrapper ul li.found:before {
+    content: "\f1b0";
+}
+
+.footer-wrapper ul li.vet:before {
+    content: "\f0f1";
+}
+
+.footer-wrapper ul li.hotel:before {
+    content: "\f594";
+}
+
+.footer-wrapper ul li.walk:before {
+    content: "\f554";
+}
+
+.footer-wrapper ul li.foster:before {
+    content: "\f6d3";
+}
+
+/*for small and xs screens*/
+@media (max-width: 767px) {
+    p.address {
+        position: absolute;
+        top: 24.5em;
+        padding: 0 0.5em;
+    }
+
+    .footer-wrapper {
+        padding-bottom: 4.5em;
+    }
+}
