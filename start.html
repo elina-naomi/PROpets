@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a0dd44c9c7.js" crossorigin="anonymous"></script>
-    <script src="css/script-button.js"></script>
+    <script src="scripts/script-button.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse col d-sm-flex justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <button class="btn sign-in-button" href="#">Sign in</button>
+                        <a class="btn sign-in-button" href="#">Sign in</a>
                     </li>
                 </ul>
             </div>
@@ -42,10 +42,10 @@
     </div>
 </header>
 
-<section class="container-fluid">
+<section class="container-fluid main-puppy">
     <div class="main-wrapper container-xl">
         <div class="row">
-            <h1 class="col-xl-6 col-md-7 col-sm-12 py-5 px-4 mb-3 my-md-5">Welcome to your <span>pawfessional</span>
+            <h1 class="col-xl-6 col-md-7 col-sm-12 py-5 px-lg-4 px-3 mb-3 mt-md-5">Welcome to your <span>pawfessional</span>
                 community!</h1>
 
         </div>
@@ -54,10 +54,10 @@
     <div id="b" class="row lost-button-wrapper">
         <div class="container-xl">
             <div class="row">
-                <a class="col-5 px-0 lost-button" href="#">
-                    <div id="a" class="py-4 px-3">
-                        <h2 id="a2" class="text-button"></h2>
-                        <img class="icon-search" src="images/Group%2011.svg" alt="search-icon" width="79px">
+                <a class="col-7 col-md-5 lost-button" href="#">
+                    <div id="a" class="py-4 px-3 mr-4 mr-sm-0">
+                        <h2 class="text-button"></h2>
+                        <img class="icon-search" src="images/Group%2011.svg" alt="search-icon">
                     </div>
                 </a>
 
@@ -67,12 +67,19 @@
     <div id="d" class="row found-button-wrapper">
         <div class="container-xl">
             <div class="row">
-                <a class="col-4 px-0 found-button" href="#">
-                    <div id="c" class="py-4 px-3">
-                        <h2>I found a pet!</h2>
+                <a class="col-6 col-md-4 found-button pr-0" href="#">
+                    <div id="c" class="py-4 pl-3">
+                        <h2 class="text-button"></h2>
                     </div>
                 </a>
             </div>
+        </div>
+    </div>
+    <div class="container-xl text-with-link">
+        <div class="row">
+            <p class="col-md-12 col-8 pl-xl-4 ml-xl-2 my-md-4 my-3 pt-lg-2 pt-md-4">
+                I’m okay, just want to <u><a class="text-uppercase font-weight-bolder" href="#">join</a></u> the pawsome community!
+            </p>
         </div>
     </div>
 </section>
@@ -82,7 +89,7 @@
 
 <section class="jumbotron-fluid green-wrapper">
     <div class="container-sm">
-        <div class="row text-center justify-content-center py-2 my-1">
+        <div class="row text-center justify-content-center py-2">
             <h2 class="col-10 col-xl-9 py-md-5 py-3 my-4">Our fluffy space for lovers, admirers, dads and moms of our
                 four-legged, winged, tailed
                 guys.</h2>
